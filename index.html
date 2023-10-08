@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
   </head>
+  <style>
+    body {
+      background-color: rgb(28, 29, 29);
+      color: rgb(194, 202, 202);
+      width: 70%;
+      margin: auto;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+
+    .hover {
+      width: 10rem;
+      transform: scale(90%);
+      transition: all 200ms;
+      filter: brightness(60%);
+    }
+    .hover:hover {
+      transform: scale(100%);
+      filter: brightness(90%);
+    }
+
+    #imagem {
+      cursor: pointer;
+      border-radius: 1rem;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(194, 202, 202);
+    }
+
+    a:hover {
+      color: blueviolet;
+      font-size: 1.2rem;
+      transition: all 200ms;
+    }
+
+    h2 {
+      font-family: sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  </style>
   <body>
     <h1>Hello World</h1>
     <h2>
@@ -14,16 +61,19 @@
       cum pariatur placeat!
     </h2>
 
-    <ul>
-      <li>Israel</li>
-      <li>Josiel</li>
-      <li>Wesley</li>
-      <li>Rafael</li>
-    </ul>
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto
+      iste nostrum tenetur neque dolorem veniam rerum corporis minus soluta
+      deleniti quidem repudiandae atque porro, labore accusantium. Quisquam,
+      odio similique? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Magnam aut non, mollitia earum enim cum vel recusandae, ipsum eos
+      asperiores quaerat nemo quis ab officia ut incidunt et dicta obcaecati!
+    </h2>
+
     <img
-      width="300"
-      height="300"
-      src="./not.avif"
+      class="hover"
+      id="imagem"
+      src="./not.jpg"
       alt="notbool com codigo em uma mesa"
     />
 
@@ -35,6 +85,11 @@
           >javascript</a
         >
       </li>
+      <a
+        target="_blank"
+        href="https://www.w3schools.com/js/js_htmldom_document.asp"
+        ><img class="hover" src="./js.png" alt="imagem javascript"
+      /></a>
       <li>
         <a
           target="_blank"
@@ -42,6 +97,11 @@
           >HTML</a
         >
       </li>
+      <a
+        target="_blank"
+        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+        ><img class="hover" src="./html.png" alt="imagem html"
+      /></a>
       <li>
         <a
           target="_blank"
@@ -49,6 +109,9 @@
           >CSS</a
         >
       </li>
+      <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+        ><img class="hover" src="./css.png" alt="imagem css"
+      /></a>
     </ul>
   </body>
 </html>
